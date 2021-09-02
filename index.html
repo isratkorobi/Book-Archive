@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cover</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        input[type=text]:focus {
+            box-shadow: none;
+        }
+
+        .all-inform {
+            background-color: rgba(242, 243, 243, 0.801);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- start section -->
+    <section class="all-inform mb-5 p-5">
+        <!-- heading -->
+        <h2 class="text-center mb-4">Search your favorite Books</h2>
+        <!-- input-field -->
+        <div class="input-group mb-3 mx-auto w-50 mb-5 mt-5">
+            <input id="input-field" type="text" class="form-control" placeholder="search you favorite book"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <!-- input-button -->
+            <button onclick="searchBook()" class="btn btn-outline-secondary" type="button"
+                id="search-button">search</button>
+        </div>
+        <h3 class="ms-5">Total Results:</h3>
+        <div id="error"></div>
+        <!-- dynamic div -->
+        <div id="search-result" class="row row-cols-3 row-cols-md-4 g-1">
+            <!-- <div class="col">
+            </div> -->
+        </div>
+    </section>
+    <!-- linkup js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
